@@ -109,3 +109,7 @@ Which will generate the checksumhash
 which can be use for automatically call the
 http://127.0.0.1:8000/paytm/response/
 and pass the checksumhash for further payment
+
+
+<h2>Tests</h1>
+![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/da99e539-3d03-44de-b666-8a52a8c43acf)
