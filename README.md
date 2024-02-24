@@ -102,7 +102,9 @@ Endpoint¬:-http://127.0.0.1:8000/order/admin/
 <h2>Paytm</h2>
 For the paytm unhave to hit the endpoint
 http://127.0.0.1:8000/paytm/pay/
+
 ![paytm](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/ef2e4048-ca42-4212-9c95-1918ae6af333)
+
 Which will generate the checksumhash
 which can be use for automatically call the
 http://127.0.0.1:8000/paytm/response/
