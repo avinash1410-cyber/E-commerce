@@ -52,31 +52,49 @@ The “pk” is the product id that user want to book
 <h3>Case 2</h3>:- If the Stock >0 and user is authenticated can place the order successfully
 On placing a order the stock of product will be decrement by one
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/43eefd58-af79-40c3-a319-f32f004393eb)
+
 http://127.0.0.1:8000/order/ to see the list of All the order of Log in user
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/cfd5f862-8194-4b9a-90ad-34b80c050789)
+
 Update the stock quantity of products when an order is placed.
 <h2>Dashboard</h2>
-http://127.0.0.1:8000/account/ dashboard  To see the dashboard of the logged in user In this user can see the list of all his Item in cart and items in the order list
+http://127.0.0.1:8000/account/ dashboard
+To see the dashboard of the logged in user In this user can see the list of all his Item in cart and items in the order list
+
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/8b06dfa7-a336-4064-9456-59d1f1f949fc)
+
 Order history:- here user can see the list of all his order if user is authenticated
 http://127.0.0.1:8000/order/
+
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/d2c18046-8312-447d-932c-ee6e17fdce18)
+
 10)<h2>Admin</h2>
 To see the Admin panel and using the CRUD functionality u can go to below endpoint
 http://127.0.0.1:8000/admin/
-If user is not admin he can’t log in image 1 
+If user is not admin he can’t log in image 1
+
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/e466624b-d57a-4ef0-80c2-209af2087008)
+
 If user is admin he will go to admin section which will be like as below in image 
+
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/c1714276-8ddc-426c-b651-7723915b6588)
+
 Example of the CRUD in Admin panel
+
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/69358f82-83d4-420b-92a4-be3542fb7d4a)
+
 If user is not admin Not Authorize to see the admin view
+
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/ef04febf-649a-4981-ae05-92ecc2af08da)
+
 If the user is admin
 Will be Authorized to see the Admin view
 Cart admin View:- The Admin Will be Able to see the All Cart Item
 Endpoint:- http://127.0.0.1:8000/cart/admin/
+
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/8b4334b0-eb65-4912-ab28-8727e5b2cc52)
+
 Order admin View:- The Admin Will be Able to see the All Order Item
 Endpoint¬:-http://127.0.0.1:8000/order/admin/ 
+
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/c878160c-a55a-42b8-a62c-4b52bc740f86)
