@@ -1,18 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment status</title>
-</head>
-<body>
-    <!-- style it however you want -->
-    <!-- the 'response' is coming from the context -->
-    {% if response.STATUS == "TXN_SUCCESS" %}
-    <h1>Transaction successful</h1>
-    {% else %}
-    <h1>Transaction Failed</h1>
-    {% endif %}
-    <a href="http://localhost:3000"><button>Go Home</button></a>
-</body>
-</html>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<form action="{% url 'payment_success' %}" method="POST">
+   <input type="hidden" name="order_id" value="{{ order_id }}">
+   <script>
+       var options = {
+           "key": "{{ settings.RAZORPAY_API_KEY }}",
+           "amount": "{{ amount }}",
+           "currency": "INR",
+           "name": "Your Company Name",
+           "description": "Payment Description",
+           "order_id": "{{ order_id }}",
+           "handler": function(response) {
+               // Handle the payment success response
+               // You can submit the form or redirect to a success page
+               document.forms[0].submit();
+           },
+           "prefill": {
+               "name": "John Doe",
+               "email": "john@example.com",
+               "contact": "9876543210"
+           }
+       };
+       var rzp = new Razorpay(options);
+       rzp.open();
+   </script>
+</form>
