@@ -98,3 +98,12 @@ Order admin View:- The Admin Will be Able to see the All Order Item
 Endpoint¬:-http://127.0.0.1:8000/order/admin/ 
 
 ![image](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/c878160c-a55a-42b8-a62c-4b52bc740f86)
+
+<h2>Paytm</h2>
+For the paytm unhave to hit the endpoint
+http://127.0.0.1:8000/paytm/pay/
+![paytm](https://github.com/avinash1410-cyber/E-commerce/assets/74523129/ef2e4048-ca42-4212-9c95-1918ae6af333)
+Which will generate the checksumhash
+which can be use for automatically call the
+http://127.0.0.1:8000/paytm/response/
+and pass the checksumhash for further payment
